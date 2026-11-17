@@ -1,0 +1,6 @@
+{
+  "permissions": {
+    "deny": ["Read(./archive/**)", "Edit(./external/**)"]
+  },
+  "claudeMdExcludes": ["**/external/ext-*/**"]
+}
