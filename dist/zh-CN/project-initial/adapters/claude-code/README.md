@@ -1,8 +1,6 @@
 # 适配层：Claude Code
 
-这一层把通用规范接入 Claude Code。通用部分（`README.md`、`templates/`、`tools/`）不提具体工具。换用其他工具时，在 `adapters/<工具名>/` 下新建 `install.sh`，接入该工具的指令文件和权限规则即可。
-
-规范仓库可以构建为 `project-initial` skill，见 `skill/SKILL.md` 和 `tools/build-skill.sh`。skill 内同样带有本适配层，初始化时加 `--adapter claude-code` 启用。
+这一层把通用规范接入 Claude Code。通用部分（`SPEC.md`、`templates/`、`tools/`）不提具体工具。换用其他工具时，在 `adapters/<工具名>/` 下新建 `install.sh`，接入该工具的指令文件和权限规则即可。
 
 ## 安装
 
@@ -15,7 +13,7 @@ sh tools/init-workspace.sh --adapter claude-code <目标目录>
 已初始化的目录，只补适配层：
 
 ```sh
-sh <规范目录>/adapters/claude-code/install.sh <目标目录> <规范目录>
+sh <包目录>/adapters/claude-code/install.sh <目标目录> <包目录>
 ```
 
 ## 写入的内容

@@ -13,12 +13,13 @@ description: 在新的或已有的项目目录中建立文件命名与更新规�
 
 | 路径 | 内容 |
 |---|---|
-| `README.md` | 规范正文。初始化时复制为目标目录的 `SPEC.md` |
+| `SPEC.md` | 规范正文。初始化时复制到目标目录 |
 | `VERSION` | 规范版本号 |
 | `templates/` | INDEX、实验说明、数据集清单和 Agent 规则块的模板 |
 | `tools/init-workspace.sh` | 初始化脚本 |
 | `tools/check-workspace.sh` | 一致性检查。加 `--remote` 时核对外部仓库是否有新提交 |
 | `tools/pull-external.sh` | 拉取外部仓库的一个版本 |
+| `tools/messages.sh` | 工具输出的消息，语言与本 skill 相同 |
 | `adapters/<名称>/` | 工具适配层，每个工具一个目录。目前有 `claude-code` |
 
 ## 步骤
