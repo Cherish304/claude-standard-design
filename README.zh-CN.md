@@ -83,6 +83,7 @@ src/
 scripts/build.sh    构建各语言的包
 dist/<语言>/project-initial/   生成的包，不要手动修改
 VERSION             规范版本
+LICENSE             MIT
 ```
 
 ## 参与修改
@@ -100,3 +101,7 @@ POSIX `sh`、`git`、`awk`、`sed`、`grep`、`find`，以及 `shasum` 或 `sha2
 - 在 macOS 上用 `sh`（bash 3.2）和 `dash` 测试过。未在 Linux 和 Windows 上测试。
 - `claude-code` 适配层的权限规则依据 Claude Code 官方文档编写，没有在真实会话中测试。
 - 其他 Agent 工具可以把包当作普通说明文档读取。目前只有 `claude-code` 一个适配层。
+
+## 许可证
+
+[MIT](LICENSE)。`dist/` 中的每个包都带有一份副本。

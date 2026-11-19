@@ -83,6 +83,7 @@ src/
 scripts/build.sh    builds the packages
 dist/<lang>/project-initial/   generated packages. Do not edit them
 VERSION             spec version
+LICENSE             MIT
 ```
 
 ## Contributing
@@ -100,3 +101,7 @@ POSIX `sh`, `git`, `awk`, `sed`, `grep`, `find`, and `shasum` or `sha256sum`.
 - Tested on macOS with `sh` (bash 3.2) and `dash`. Not tested on Linux or Windows.
 - The permission rules of the `claude-code` adapter follow the official Claude Code documentation. They were not tested in a live session.
 - Other agent tools can read a package as plain instructions. Only the `claude-code` adapter exists so far.
+
+## License
+
+[MIT](LICENSE). Every package in `dist/` carries a copy.

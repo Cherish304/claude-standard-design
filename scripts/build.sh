@@ -72,10 +72,10 @@ build_one() {
 
   # Remove only what this script writes, so unrelated files in the folder survive.
   rm -rf "$dest/templates" "$dest/tools" "$dest/adapters" \
-         "$dest/SKILL.md" "$dest/SPEC.md" "$dest/VERSION"
+         "$dest/SKILL.md" "$dest/SPEC.md" "$dest/VERSION" "$dest/LICENSE"
   mkdir -p "$dest/templates" "$dest/tools" "$dest/adapters"
 
-  cp "$REPO/VERSION" "$dest/VERSION"
+  cp "$REPO/VERSION" "$REPO/LICENSE" "$dest/"
   cp "$I18N/SKILL.md" "$I18N/SPEC.md" "$dest/"
   cp "$I18N"/templates/*.md "$dest/templates/"
 
